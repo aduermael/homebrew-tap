@@ -3,7 +3,11 @@ class Wb < Formula
   homepage "https://github.com/aduermael/wb"
   version "0.1.0"
 
-  depends_on macos: :tahoe
+  depends_on :macos
+
+  on_macos do
+    depends_on macos: :tahoe
+  end
 
   if Hardware::CPU.arm?
     url "https://github.com/aduermael/wb/releases/download/v0.1.0/wb-macos-arm64.tar.gz"
