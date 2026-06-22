@@ -1,7 +1,7 @@
 class Wb < Formula
   desc "macOS web browser for agents"
   homepage "https://github.com/aduermael/wb"
-  version "0.1.0"
+  version "0.1.1"
 
   depends_on :macos
 
@@ -10,11 +10,11 @@ class Wb < Formula
   end
 
   if Hardware::CPU.arm?
-    url "https://github.com/aduermael/wb/releases/download/v0.1.0/wb-macos-arm64.tar.gz"
-    sha256 "70879bf677c99fbf9a73dcfe24fe406ad50b85e7de108610c7efc121e05b42a2"
+    url "https://github.com/aduermael/wb/releases/download/v0.1.1/wb-macos-arm64.tar.gz"
+    sha256 "fe6478f16e3672936fa6a387ddad4fa299727b165cf9dc98faad1283e91ac93a"
   elsif Hardware::CPU.intel?
-    url "https://github.com/aduermael/wb/releases/download/v0.1.0/wb-macos-x86_64.tar.gz"
-    sha256 "c9dd860340d17503409e16f46726cdb218a84a4cf426878eab49e43f4be23f46"
+    url "https://github.com/aduermael/wb/releases/download/v0.1.1/wb-macos-x86_64.tar.gz"
+    sha256 "8e2b1651e884a505753e5faef0db9aa83fd928a6b87c5bf96c45d267ddb9c0ed"
   end
 
   def install
